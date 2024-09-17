@@ -1,0 +1,15 @@
+<h3>Login</h3>
+
+<div>
+  <p>Name</p>
+  <input [(ngModel)]="name"/>
+
+  <p>Password</p>
+  <input type="password" [(ngModel)]="password" />
+
+  <p id="error" *ngIf="failed" >Wrong name or password</p>
+
+  <button (click)="signIn()">Login</button>
+
+  <p (click)="moveToRegister()">No account? Register instead</p>
+</div>

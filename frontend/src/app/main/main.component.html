@@ -1,0 +1,14 @@
+
+<h3>Random recepies</h3>
+<div>Number of random recepies to get<input type="number" [(ngModel)]="recepyCount" /></div>
+<button (click)="getRandomRecepies()">Get random recepies</button>
+
+<br>
+<br>
+
+<div *ngFor="let recepy of randomRecepies">
+  <div (click)="openRecepy(recepy['id'], recepy['title'], recepy['image'])">
+    <h5>{{recepy['title']}}</h5>
+    <img src="{{recepy['image']}}" />
+  </div>
+</div>

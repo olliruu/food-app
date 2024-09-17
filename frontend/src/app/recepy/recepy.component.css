@@ -1,0 +1,14 @@
+p{
+  display: inline-block;
+  margin:0px;
+  font-size:large;
+}
+img {
+  display: inline-block;
+  margin-right: 10px;
+}
+.item {
+  display: flex;
+  
+  align-items: center;
+}

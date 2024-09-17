@@ -1,0 +1,13 @@
+a{
+    margin:20px
+}
+
+.parent {
+  display: flex;
+  justify-content: center;
+  width:100%
+}
+
+.container{
+    width:300px;
+}

@@ -1,0 +1,16 @@
+<h3>Create account</h3>
+
+<div>
+  <p>Name</p>
+  <input [(ngModel)]="name" />
+
+  <p>Password</p>
+  <input type="password" [(ngModel)]="password" />
+
+  <p id="error" *ngIf="failed">Name not available</p>
+
+  <button (click)="signUp()">Create account</button>
+
+  <p (click)="moveToLogin()" >If you have an account, login instead</p>
+
+</div>

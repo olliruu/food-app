@@ -1,0 +1,13 @@
+<div class="parent">
+  <div class="container">
+    <h1>Food App</h1>
+    <nav *ngIf="showLinks()">
+      <a [routerLink]="['/']">Home</a>
+      <a [routerLink]="['/history']">History</a>
+    </nav>
+    <br>
+    <br>
+    <router-outlet />
+  </div>
+</div>
+
